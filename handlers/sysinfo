@@ -22,7 +22,7 @@ def humanbytes(size):
 #Module by AnonymousBoy1025
 # FETCH SYSINFO
 
-@Client.on_message(command(["sysinfo"]) & ~filters.edited)
+@Client.on_message(command(["فحص"]) & ~filters.edited)
 async def give_sysinfo(client, message):
     splatform = platform.system()
     platform_release = platform.release()
@@ -44,18 +44,18 @@ async def give_sysinfo(client, message):
     cpu_len = len(psutil.Process().cpu_affinity())
     wtf = f""" **•• sʏsᴛᴇᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ••**
 ┏━━━━━━━━━━━━━━━━━━━━━━━━┓
-┣★ **ᴘʟᴀᴛꜰᴏʀᴍ :** `{splatform}`
+┣★ **ᴘʟᴀᴛꜰᴏʀᴍ :** `{فحص}`
 ┣★ **ᴘʟᴀᴛꜰᴏʀᴍ ʀᴇʟᴇᴀsᴇ :** `{platform_release}`
-┣★ **ᴘʟᴀᴛꜰᴏʀᴍ ᴠᴇʀsɪᴏɴ​ :** `{platform_version}`
-┣★ **ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ :** `{architecture}`
-┣★ **ʜᴏsᴛɴᴀᴍᴇ :** `{hostname}`
-┣★ **ɪᴘ :** `{ip_address}`
-┣★ **ᴍᴀᴄ :** `{mac_address}`
-┣★ **ᴘʀᴏᴄᴇssᴏʀ :** `{processor}`
-┣★ **ʀᴀᴍ : ** `{ram}`
-┣★ **ᴄᴘᴜ :** `{cpu_len}`
-┣★ **ᴄᴘᴜ ꜰʀᴇǫᴜᴇɴᴄʏ :** `{cpu_freq}`
-┣★ **ᴅɪsᴋ :** `{disk}`
+┣★ **أصدار البوت​ :** `{platform_version}`
+┣★ **نسخة :** `{architecture}`
+┣★ **أسم المضيف :** `{hostname}`
+┣★ **أيبي أدريس  :** `{ip_address}`
+┣★ ** ماك أدريس  :** `{mac_address}`
+┣★ **بروكسل :** `{processor}`
+┣★ **رام : ** `{ram}`
+┣★ **المعالج :** `{cpu_len}`
+┣★ **الاستخدام ꜰʀᴇǫᴜᴇɴᴄʏ :** `{cpu_freq}`
+┣★ **القرص:** `{disk}`
 ┗━━━━━━━━━━━━━━━━━━━━━━━━┛
     """
     await message.reply(wtf)
