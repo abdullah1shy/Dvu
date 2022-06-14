@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("» ابشر يتم البحث ")
+    fallen = await message.reply("» 🔸 يتم البحث ")
 
     chumtiya = message.from_user.mention
 
