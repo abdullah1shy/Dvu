@@ -63,7 +63,7 @@ async def help(client: Client, message: Message):
                         " كروب السورس ", url=f"https://t.me/{SUPPORT_GROUP}"
                     ),
                     InlineKeyboardButton(
-                        " قناة السورس ", url="https://t.me/QQQLO"
+                        " قناة السورس ", url="https://t.me/r55r1"
                     )
                 ]
             ]

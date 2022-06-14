@@ -19,11 +19,11 @@ async def start_(client: Client, message: Message):
  اضفني الى مجموعتك وامنحني الصلاحيات لكي اعمل بشكل صحيح
 ┏━━━━━━━━━━━━━━┓
 ┣★ نشكر كل مين اضاف 
-┣★ [Source](t.me/R125R)
+┣★ [Source](t.me/r55r1)
 ┣★ بوتات ســـورس
 ┗━━━━━━━━━━━━━━┛
 
- لمعرفة اوامر هذا البوت اضغط على زر الاوامر ان واجهة مشكلة تواصل مع المطور [السورس](t.me/{me})
+ لمعرفة اوامر هذا البوت اضغط على زر الاوامر ان واجهة مشكلة تواصل مع المطور [السورس](t.me/r55r1)
 ━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
@@ -33,7 +33,7 @@ async def start_(client: Client, message: Message):
                        ),
                   ],[
                     InlineKeyboardButton(
-                        "مطور البوت", url=f"https://t.me/R125r"
+                        "مطور البوت", url=f"https://t.me/r55r1"
                     ),
                     InlineKeyboardButton(
                         "كروب الدعم", url=f"https://t.me/{SUPPORT_GROUP}"
@@ -43,7 +43,7 @@ async def start_(client: Client, message: Message):
                         "الاوامر", url=f"https://telegra.ph/%F0%9D%99%B2%E1%B4%8F%E1%B4%8D%E1%B4%8D%E1%B4%80%C9%B4%E1%B4%85s-04-06"
                     ),
                     InlineKeyboardButton(
-                        "قناة البوت الرسمية", url="https://t.me/R125R"
+                        "قناة البوت الرسمية", url="https://t.me/r55r1"
                     )]
             ]
        ),
