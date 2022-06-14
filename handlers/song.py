@@ -45,11 +45,11 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "» عيوني لضلك غشيم اكتب شي عشان ابحث."
+            "» عيوني   اكتب شي حتى ابحث."
         )
         print(str(e))
         return
-    m.edit(f"» ابشر الحين انت فتح مخك قاعد احملك {bn} ​.")
+    m.edit(f"» 🛠️  أنتضر كاعد احملك {bn} ​.")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -63,7 +63,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit("**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [{bn} sᴜᴩᴩᴏʀᴛ](t.me/R125R **")
+        m.edit("**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [{bn} sᴜᴩᴩᴏʀᴛ](t.me/R55R1 **")
         print(e)
 
     try:
