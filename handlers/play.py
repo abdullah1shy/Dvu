@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("» ابشر يتم البحث ")
+    fallen = await message.reply("» يتم البحث 🔎 ")
 
     chumtiya = message.from_user.mention
 
@@ -155,7 +155,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await fallen.edit(
-                "» ياغالي اكتب شي للبحث او اعطيني اسم الاغنيه صالح 🤦🏻‍♂️"
+                "»  اكتب شي للبحث او اعطيني اسم الاغنيه صالح "
             )
         await fallen.edit("🔎")
         query = message.text.split(None, 1)[1]
@@ -182,7 +182,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await fallen.edit(
-                "» عفوآ عيني عندك مشكلة بل اغنيه اكتبها صح يا ابوراس مربع 🙂"
+                "» عفوآ هنالك مشكلة في بحثك قم بلكتابة بشكل صحيح ♫︎"
             )
             print(str(e))
             return
@@ -223,7 +223,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**» ابشر تم التشغيل «**\n **الاغنيه:** [{title[:65]}]({url})\n **عدد:** `{duration}` الدقائق\n **طلب الحلو​:** {chumtiya}\n **الدردشة​:** `{message.chat.title}`\n **نوع التشغيل:** موسيقى\n",
+            text=f"**» ♫︎ تم التشغيل «**\n **الاغنيه:** [{title[:65]}]({url})\n **عدد:** `{duration}` الدقائق\n **طلب الحلو​:** {chumtiya}\n **الدردشة​:** `{message.chat.title}`\n **نوع التشغيل:** موسيقى\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
