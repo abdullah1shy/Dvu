@@ -3,7 +3,7 @@
   "logo": "https://telegra.ph/file/4178437eb9055c08ec4da.jpg",
   "description": "سورس بيكاثون مجاني لايخدعك احد في التنصيب.",
   "keywords": ["music", "voicechat", "telegram", "fallen"],
-  "repository": "https://github.com/abdullah1shy/Dvu/blob/main/handlers/song.py",
+  "repository": "https://github.com/abdullah1shy/Dvu",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
