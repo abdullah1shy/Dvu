@@ -1,9 +1,9 @@
 {
-  "name": "ميوزك كوبرا",
-  "logo": "https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
-  "description": "سورس كوبرا مجاني لايخدعك احد في التنصيب.",
+  "name": "ميوزك بيكاثون",
+  "logo": "https://telegra.ph/file/4178437eb9055c08ec4da.jpg",
+  "description": "سورس بيكاثون مجاني لايخدعك احد في التنصيب.",
   "keywords": ["music", "voicechat", "telegram", "fallen"],
-  "repository": "https://github.com/ERTWF/UWERT",
+  "repository": "https://github.com/abdullah1shy/Dvu/blob/main/handlers/song.py",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
