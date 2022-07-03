@@ -55,7 +55,7 @@ async def give_sysinfo(client, message):
 ┣★ **رام ⚙️: ** `{ram}`
 ┣★ **المعالج :** `{cpu_len}`
 ┣★ **الاستخدام ꜰʀᴇǫᴜᴇɴᴄʏ :** `{cpu_freq}`
-┣★ **القرص:** `{disk}`
+┣★ **القرص :** `{disk}`
 ┗━━━━━━━━━━━━━━━━━━━━━━━━┛
     """
     await message.reply(wtf)
