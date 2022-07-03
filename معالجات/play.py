@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("» 🔸 يتم البحث ")
+    fallen = await message.reply("» أنتضر \b 🚁 يتم البحث ")
 
     chumtiya = message.from_user.mention
 
@@ -182,7 +182,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await fallen.edit(
-                "» عفوآ عيني عندك مشكلة بل اغنيه اكتبها صح يا ابوراس مربع 🙂"
+                " عفوآ عيني عندك مشكلة بل اغنيه اكتبه  صح"
             )
             print(str(e))
             return
@@ -200,7 +200,7 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_text(
-            text=f"**» ابشر تم التشغيل {position} **\n **الاغنيه :**[{title[:65]}]({url})\n\n** عدد :** `{duration}` **الدقائق**\n** طلب الحلو​ : **{chumtiya}",
+            text=f"**»  ابشر تم التشغيل {position} **\n **الاغنيه :**[{title[:65]}]({url})\n\n** عدد :** `{duration}` **الدقائق**\n** طلب الحلو​ : **{chumtiya}",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
