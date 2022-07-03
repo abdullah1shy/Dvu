@@ -52,7 +52,7 @@ async def give_sysinfo(client, message):
 ┣★ **أيبي أدريس  :** `{ip_address}`
 ┣★ ** ماك أدريس  :** `{mac_address}`
 ┣★ **بروكسل :** `{processor}`
-┣★ **رام : ** `{ram}`
+┣★ **رام ⚙️: ** `{ram}`
 ┣★ **المعالج :** `{cpu_len}`
 ┣★ **الاستخدام ꜰʀᴇǫᴜᴇɴᴄʏ :** `{cpu_freq}`
 ┣★ **القرص:** `{disk}`
