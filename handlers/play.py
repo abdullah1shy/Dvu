@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("» يتم البحث 🔎 ")
+    fallen = await message.reply("» يتم البحث \t 🔎 ")
 
     chumtiya = message.from_user.mention
 
@@ -94,7 +94,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except Exception as e:
         await fallen.edit(
-            f"<i>» ᴀssɪsᴛᴀɴᴛ ғᴀɪʟᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀᴛ.</i>\n\nʀᴇᴀsᴏɴ : {e}")
+            f"<i>» فشل أنضمام المساعد الى الدردشة \b 🧸.</i>\n\nʀᴇᴀsᴏɴ : {e}")
         return
     
     audio = (
@@ -157,7 +157,7 @@ async def play(_, message: Message):
             return await fallen.edit(
                 "»  اكتب شي للبحث او اعطيني اسم الاغنيه صالح "
             )
-        await fallen.edit("🔎")
+        await fallen.edit("يتم البحث \t أنتضر 🧸")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -200,12 +200,12 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_text(
-            text=f"**» ابشر تم التشغيل {position} **\n **الاغنيه :**[{title[:65]}]({url})\n\n** عدد :** `{duration}` **الدقائق**\n** طلب الحلو​ : **{chumtiya}",
+            text=f"**» \t تم التشغيل {position} **\n **الاغنيه :**[{title[:65]}]({url})\n\n** عدد :** `{duration}` **الدقائق**\n** طلب الحلو​ : **{chumtiya}",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• كروب البوت •", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("» اخفاء القائمة «", callback_data="close_play")
+                    InlineKeyboardButton("• كروب  البوت •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("» اخفاء  القائمة «", callback_data="close_play")
                 ],
             ]
         ),
