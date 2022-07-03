@@ -37,7 +37,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-@Client.on_message(command(["ping", "بنك", "anon", "alive"]) & filters.group & ~filters.edited & ~filters.private)
+@Client.on_message(command(["ping", "بنك", "anon", "فحص"]) & filters.group & ~filters.edited & ~filters.private)
 
 async def help(client: Client, message: Message):
     await message.delete()
@@ -52,10 +52,10 @@ async def help(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
     rahul = await message.reply_photo(
         photo=f"{PING_IMG}",
-        caption="🛠️𝐏𝐢𝐧𝐠...",
+        caption="🛠️جار المعالجة...",
     )
     await rahul.edit_text(
-        f"""<b> ᴩᴏɴɢ ʙᴀʙʏ ! ☀︎︎</b>\n  🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:</u></b>\n\n• ᴜᴩᴛɪᴍᴇ : {bot_uptime}\n• ᴄᴩᴜ : {cpu}%\n• ᴅɪsᴋ : {disk}%\n• ʀᴀᴍ : {mem}""",
+        f"""<b> البوت يعمل بنجاح ❤️‍🔥 ! ☀︎︎</b>\n  🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} نـض֮ـامࣩ ࿇:</u></b>\n\n• مَــدِهِ أّلَتّشٍغٌـيِّـلَ Ξ : {bot_uptime}\n• آلـمـٰعــُآلــج : {cpu}%\n• آلَـقًــڒٍصّ : {disk}%\n• أّلَــڒٍأّمَ : {mem}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
