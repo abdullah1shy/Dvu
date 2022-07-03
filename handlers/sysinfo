@@ -44,7 +44,7 @@ async def give_sysinfo(client, message):
     cpu_len = len(psutil.Process().cpu_affinity())
     wtf = f""" **•• sʏsᴛᴇᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ••**
 ┏━━━━━━━━━━━━━━━━━━━━━━━━┓
-┣★ **ᴘʟᴀᴛꜰᴏʀᴍ :** `{فحص}`
+┣★ **ᴘʟᴀᴛꜰᴏʀᴍ  :** `{فحص}`
 ┣★ **ᴘʟᴀᴛꜰᴏʀᴍ ʀᴇʟᴇᴀsᴇ :** `{platform_release}`
 ┣★ **أصدار البوت​ :** `{platform_version}`
 ┣★ **نسخة :** `{architecture}`
