@@ -13,22 +13,22 @@ from pytgcalls.types.input_stream import InputStream
 
 ACTV_CALLS = []
 
-@Client.on_message(command(["pause", "rukja"]) & other_filters)
+@Client.on_message(command(["ايقاف", "rukja"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("» ᴛʀᴀᴄᴋ ᴘᴀᴜsᴇᴅ ʙʏ {} ʙᴀʙʏ😫".format( message.from_user.mention ), )
+    await message.reply_text("» تم الأيقاف مؤقتاً بواسطة العزيز {} ❤️‍🔥".format( message.from_user.mention ), )
 
 
-@Client.on_message(command(["resume"]) & other_filters)
+@Client.on_message(command(["بدء"]) & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("» ᴛʀᴀᴄᴋ ʀᴇsᴜᴍᴇᴅ ʙʏ {} ʙᴀʙʏ🤗".format( message.from_user.mention ), )
+    await message.reply_text("» تم اكمال الأغنية بواسطة العزيز {} ❤️‍🔥".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["كافي", "stop"]) & other_filters)
