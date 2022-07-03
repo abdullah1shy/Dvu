@@ -14,7 +14,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command(["song", "حمل", "فيديو", "video"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["song", "حمل", "تحميل", "video"]) & ~filters.private & ~filters.channel)
 def song(client, message):
 
     message.delete()
@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("🔎")
+    m = message.reply("يتم البحث")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
