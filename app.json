@@ -35,25 +35,27 @@
     "OWNER_USERNAME": {
       "description": "معرفك كمطور بدون @",
       "required": false,
-      "value": "QABNADLIB"
+      "value": "J64JJ"
     },
     "SUPPORT_GROUP": {
       "description": "معرف كروبك بدون @",
       "required": false,
-      "value": "faqek"
+      "value": "PP6P3"
     },
     "SUDO_USERS": {
       "description": "حط ايدي المطورين.",
       "required": true,
-      "value": "1939538780"
+      "value": "1898184845"
     },
     "START_IMG": {
       "description": "صوره للبوت مطلوب",
       "required": false
+      "value": "https://telegra.ph/file/752ff2d950edf61d04820.jpg" 
     },
     "PING_IMG": {
       "description": "صوره للبوت مطلوب",
       "required": false
+      "value": "https://telegra.ph/file/752ff2d950edf61d04820.jpg" 
     },
     "PMPERMIT": {
       "description": "عوفها لاتلعب بيها.",
@@ -63,7 +65,7 @@
     "DURATION_LIMIT": {
       "description": "عوفها لتلعب بيها.",
       "required": false,
-      "value": "90"
+      "value": "60"
     }
   }
 }
