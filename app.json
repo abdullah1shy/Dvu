@@ -17,12 +17,12 @@
     "BOT_NAME": {
       "description": "معرف بوتك بدون @",
       "required": false,
-      "value": ""
+      "value": "cc_rz1bot"
     },
     "BOT_USERNAME": {
       "description": "معرف بوتك بدون @",
       "required": false,
-      "value": ""
+      "value": "cc_rz1bot"
     },
     "API_ID": {
       "description": "ايبي ايدي my.telegram.org/apps",
