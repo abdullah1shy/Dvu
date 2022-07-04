@@ -50,12 +50,12 @@
     "START_IMG": {
       "description": "صوره للبوت مطلوب",
       "required": false
-      "value": "https://telegra.ph/file/752ff2d950edf61d04820.jpg" 
+  
     },
     "PING_IMG": {
       "description": "صوره للبوت مطلوب",
       "required": false
-      "value": "https://telegra.ph/file/752ff2d950edf61d04820.jpg" 
+      
     },
     "PMPERMIT": {
       "description": "عوفها لاتلعب بيها.",
