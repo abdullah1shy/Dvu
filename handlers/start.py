@@ -23,7 +23,7 @@ ______________________________________
 ┣★ قم بلضغط على زر الاوامر لمعرفه عمل البوت 3
 _____________________________________|
 =====================================
-     [المطور](t.me/OWNER_USERNAME)
+     [المطور](t.me\{OWNER_USERNAME})
 ━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
@@ -33,7 +33,7 @@ _____________________________________|
                        ),
                   ],[
                     InlineKeyboardButton(
-                        "مطور البوت", url=f"https://t.me/OWNER_USERNAME"
+                        "مطور البوت", url=f"https://t.me/{OWNER_USERNAME}"
                     ),
                     InlineKeyboardButton(
                         "قناة الدعم", url=f"https://t.me/{SUPPORT_GROUP}"
