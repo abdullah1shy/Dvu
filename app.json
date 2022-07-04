@@ -65,7 +65,7 @@
     "DURATION_LIMIT": {
       "description": "عوفها لتلعب بيها.",
       "required": false,
-      "value": "60"
+      "value": "90"
     }
   }
 }
