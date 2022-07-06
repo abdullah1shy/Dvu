@@ -46,6 +46,6 @@ async def inline(client: Client, query: InlineQuery):
             await query.answer(
                 results=answers,
                 cache_time=0,
-                switch_pm_text="ᴇʀʀᴏʀ : sᴇᴀʀᴄʜ ᴛɪᴍᴇᴅ ᴏᴜᴛ ",
+                switch_pm_text="ᴇʀʀᴏʀ : فشل الـبحث انتهت المدة ⌛ ",
                 switch_pm_parameter="",
             )
