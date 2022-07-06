@@ -21,10 +21,10 @@ async def ytsearch(_, message: Message):
     await message.delete()
     try:
         if len(message.command) < 2:
-            await message.reply_text("» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ!")
+            await message.reply_text("» انطيني كــلمـة ابحث عنهة 🧸📻!")
             return
         query = message.text.split(None, 1)[1]
-        m = await message.reply_text("جارً البحث")
+        m = await message.reply_text("🚀\tجارً البحث")
         results = YoutubeSearch(query, max_results=4).to_dict()
         i = 0
         text = ""
@@ -38,3 +38,4 @@ async def ytsearch(_, message: Message):
         await m.edit(text, disable_web_page_preview=True)
     except Exception as e:
         await message.reply_text(str(e))
+
