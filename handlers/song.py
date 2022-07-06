@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("يتم البحث")
+    m = message.reply("⌛ \t يتم البحث")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -45,11 +45,11 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "» عيوني   اكتب شي حتى ابحث."
+            "»   🤍📻 اكتب شي حتى ابحث."
         )
         print(str(e))
         return
-    m.edit(f"» 🛠️  أنتضر كاعد احملك {bn} ​.")
+    m.edit(f"»   يتـم التحميل الان 🚀 {bn} ​.")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -63,7 +63,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit("**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [{bn} sᴜᴩᴩᴏʀᴛ](t.me/R55R1 **")
+        m.edit("**» فشل التحميل, يرجى الأبلاغ ان استمرت المشكلة​ » [{bn} المطور](t.me/{OWNER_USERNAME} **")
         print(e)
 
     try:
