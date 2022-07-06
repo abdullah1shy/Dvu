@@ -83,14 +83,13 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "» ᴀssɪsᴛᴀɴᴛ sᴜᴄᴄᴇssꜰᴜʟʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ sᴏɴɢs​.")
+                        message.chat.id, "» اني اجيت ههههههه 😂🥺.")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await fallen.edit(
-                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ, sᴇɴᴅ /join ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
-    try:
+                        f"<b>» قم بأرسال انضم لأنضمام المساعد الى الدردشة ") 
         await USER.get_chat(chid)
     except Exception as e:
         await fallen.edit(
@@ -107,7 +106,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"»⌛ العفو عمري تجاوزت المدة المسموح بيهة وهي   {DURATION_LIMIT} دقيقة "
             )
 
         file_name = get_file_name(audio)
@@ -148,16 +147,16 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await fallen.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» ⌛عفوا عمري المدة المسموح بيهة هي \t  {DURATION_LIMIT} دقيقة ماكدر اشغلك 🥺"
             )
             return
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
             return await fallen.edit(
-                "»  اكتب شي للبحث او اعطيني اسم الاغنيه صالح "
+                "» 🧸 اكتب شي للبحث او اعطيني اسم الاغنيه صالح "
             )
-        await fallen.edit("يتم البحث \t أنتضر 🧸")
+        await fallen.edit(" 📻يتم البحث \t أنتضر 🧸")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -189,7 +188,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await fallen.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» العفو عمري متكدر تشغل  {DURATION_LIMIT} {OWNER_USERNAME} متجاوز المدة المسموح بيها بواسطة{"
             )
             return
         file_path = await converter.convert(youtube.download(url))
@@ -204,7 +203,7 @@ async def play(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• كروب  البوت •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("• قناة  البوت •", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("» اخفاء  القائمة «", callback_data="close_play")
                 ],
             ]
@@ -227,7 +226,7 @@ async def play(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• كروب البوت •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("• قناة البوت •", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("» اخفاء القائمة «", callback_data="close_play")
                 ],
             ]
