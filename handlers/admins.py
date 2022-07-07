@@ -55,7 +55,7 @@ async def skip(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ᴡʜᴀᴛ ᴛᴏ sᴋɪᴘ ʙᴀʙʏ🥲")
+        await message.reply_text("» ماكو شي مشتغل حتى اتخطى المسار عمري 🧸🤍")
     else:
         queues.task_done(chat_id)
         
