@@ -182,7 +182,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await fallen.edit(
-                " عفوآ عيني عندك مشكلة بل اغنيه اكتبه  صح"
+                "عفوآ عيني عندك مشكلة بل اغنيه اكتبه  صح"
             )
             print(str(e))
             return
@@ -200,7 +200,7 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_text(
-            text=f"**»  ابشر تم التشغيل {position} **\n **الاغنيه :**[{title[:65]}]({url})\n\n** عدد :** `{duration}` **الدقائق**\n** طلب الحلو​ : **{chumtiya}",
+            text=f"  **تم التشغيل** {position} \n **الاغنيه** [{title[:65]}]({url}) **عدد**\n : `{duration}` **الدقائق** \n **طلب الحلو​** : **{chumtiya}",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -223,7 +223,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**» ابشر تم التشغيل «**\n **الاغنيه:** [{title[:65]}]({url})\n **عدد:** `{duration}` الدقائق\n **طلب الحلو​:** {chumtiya}\n **الدردشة​:** `{message.chat.title}`\n **نوع التشغيل:** موسيقى\n",
+            text=f"**» ابشر تم التشغيل «\n **الاغنيه:** [{title[:65]}]({url}) \n **عدد:** `{duration}` الدقائق\n **طلب الحلو​:** {chumtiya}  **الدردشة​:** `{message.chat.title}`\n **نوع التشغيل:\n **موسيقى**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
